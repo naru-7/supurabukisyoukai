@@ -69,7 +69,7 @@ header a {
     align-items: center;
     justify-content: center;
     height: 600px;
-    background-image: url('images/background-pattern.png');
+    background-image: url('background-pattern.png');
     background-position: center;
     background-size: cover;
 }
