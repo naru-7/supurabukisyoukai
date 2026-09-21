@@ -1,0 +1,535 @@
+* {
+    box-sizing: border-box;
+    font-family: Noto sans JP;
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+body {
+    color: #333;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    color: #8CD03D;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 100px;
+}
+
+.section-title {
+    display: inline-block;
+    font-size: 100px;
+    letter-spacing: 0.1em;
+}
+header {
+    position: fixed;
+    z-index: 9999;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(255, 217, 0, 0.253);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowraps;
+}
+header p {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+header ul {
+    display: flex;
+    column-gap: 40px;
+    justify-content: space-between;
+    list-style: none;
+    height: fit-content;
+}
+header a {
+    font-size: 16px;
+    font-weight: bold;
+}
+.firstview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    background-image: url('images/background-pattern.png');
+    background-position: center;
+    background-size: cover;
+}
+.firstview h1 {
+    font-size: 64px;
+}
+
+.firstview p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .firstview h1 {
+        font-size: 56px;
+    }  
+}
+
+.profile {
+    /* background-color: ; */
+    padding: 50px 0;
+}
+
+.profile {
+    display: flex;
+    column-gap: 5%;
+}
+.section-title {
+    font-size: 64px;
+    letter-spacing: 0.1em;
+}
+
+.profile h3 {
+    margin-top: 72px;
+    font-size: 24px;
+}
+
+.profile p {
+    margin-top: 24px;
+    font-size: 25px;
+}
+
+.profile img {
+    width: 100%;
+}
+.school-club{
+    padding-top: 30px;
+    display: flex;
+    column-gap: 5%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    background-color: #557dff33;
+    color: #00a2ff;
+}
+.school-club .content {
+    width: 40%;
+}
+.school-club h3 {
+    margin-top: 10px;
+    font-size: 45px;
+}
+.school-club p {
+    margin-top: 20px;
+    font-size: 25px;
+}
+.school-club img {
+    width: 90%;
+    height: 500px;
+    border-radius: 16px;
+    object-fit: contain;
+}
+.school-club a {
+    display: inline-block;
+    margin-top: 32px;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+    .school-club {
+        flex-direction: column;
+        padding: 80px 0;
+    }
+
+    .profile {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    .profile h3 {
+        margin-top: 24px;
+        margin-top: 16px;
+    }
+    .school-club img {
+        height: 220px;
+    }
+
+    .school-club a {
+        margin-top: 24px;
+    }
+}
+.favorite {
+    padding: 140px 0;
+    text-align: center;
+    background-color: #F2F0F5;
+    background-position: center;
+    background-size: cover;
+}
+.favorite .section-title {
+    border-bottom: 3px solid #4620D5;
+}
+.favorite-contents img {
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+.favorite-content:nth-child(3) img {
+    object-fit: none;
+    object-position: center;
+}
+.favorite-contents h3 {
+    margin-top: 24px;
+    font-size: 24px;
+}
+
+.favorite-contents p {
+    margin-top: 8px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.favorite-contents {
+    display: flex;
+    column-gap: 16px;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    flex-wrap: nowrap;
+}
+.favorite-content {
+    width: 320px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 80%);
+    border-radius: 16px;
+}
+@media (max-width: 768px) {
+    .favorite {
+        padding: 80px 0;
+    }
+    .favorite-contents {
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+}
+.favorite-content {
+    max-width: 100%;
+}
+.favorite-content img {
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    max-width: 100%;
+}
+}
+.works {
+    padding: 70px 0;
+    text-align: center;
+    background-color: #fffdf3;
+}
+.works .section-title {
+    border-bottom: 3px solid #ff9900;
+}
+.section-title {
+    color: #FF427F;
+    display: inline-block;
+    font-size: 64px;
+    letter-spacing: 0.1em;
+}
+.works-content {
+    display: flex;
+    column-gap: 32px;
+    padding: 40px;
+    margin-top: 40px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 15%);
+}
+
+.works-content img {
+    width: 320px;
+    height: 180px;
+    object-fit: scale-down;
+}
+
+.works-content h3 {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    font-size: 28px;
+}
+
+.works-content span {
+    font-size: 16px;
+}
+
+.works-content p {
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+    .works {
+        padding: 80px 0;
+    }
+
+    .works-content {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+    .works-content img {
+        width: 100%;
+    }
+}
+.contact {
+    padding: 140px 0;
+    text-align: center;
+}
+
+.contact .section-title {
+    display: flex;  
+    justify-content: center;
+    border-bottom: 3px solid #ffa600;
+
+    
+}
+.contact p {
+    margin-top: 48px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 2;
+    text-align: left;
+    letter-spacing: 0.1em;
+}
+.contact .container {
+    max-width: 800px;
+}
+.contact a {
+    display: inline-block;
+    width: 200px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 80px;
+    color: #fff;
+    letter-spacing: 0.3em;
+    border-radius: 18px;
+}
+.contact .sns-twitter {
+    background-color: #00acee;
+}
+.contact .sns-website{
+    background-color: #333;
+}
+.contact .sns-facebook{
+    background-color: #3d5998;
+}
+.contact .sns {
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 80px 0;
+    }
+}
+
+.contact p {
+    font-size: 20px;
+}
+
+.contact .sns {
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 50px;
+}
+
+.contact a {
+    width: 100%;
+    line-height: 60px;
+}
+
+@media (max-width: 768px) {
+    header ul {
+        display: none;
+    }
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    background-color: #edece7;
+}
+.club {
+    padding: 140px 0;
+    background-color: #ffebcd;
+}
+
+.club-text {
+    position: relative;
+    z-index: 4;
+    width: 40%;
+    color: #ff9900;
+}
+.club-text h2 {
+    font-size: 40px;
+}
+
+.club-text p {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+}
+.club .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.club-img {
+    position: relative;
+    width: 50%;
+    aspect-ratio: 1/1.25;
+}
+
+.club-img img {
+    position: absolute;
+}
+.club-img img:nth-child(1) {
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 57%;
+}
+.club-img img:nth-child(2) {
+    top: 290px;
+    left: px;
+    z-index: 2;
+    width: 85%;
+}
+
+.club-img img:nth-child(3) {
+    right: 0;
+    bottom: 0px;
+    z-index: 1;
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .club {
+        padding: 80px 0;
+    }
+    
+    .club .container {
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    .club-img {
+        width: 100%;
+    }
+
+    .club-text {
+        width: 100%;
+    }
+}
+.bukiaisyou {
+    font-size: 40px;
+    margin-left: 100px;
+}
+
+.club {
+    display: flex;
+    justify-content: center;
+}
+.favorite {
+    display: flex;
+    justify-content: center;
+}
+.works {
+    display: flex;
+    justify-content: center;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+}
+.contents {
+    margin-top: 30px;
+    display: flex;
+    column-gap: 5%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+.about {
+    background-color: #ffd3d398;
+}
+.mokuzi {
+    color: #1B264F;
+}
+.favorite {
+    color: #4620D5;
+}
+/* ==============================================
+   スプラカラー（単色）の円が0.8秒で広がるアニメーション
+   ============================================== */
+
+/* 画面全体を覆うスプラカラー（単色）の円形オーバーレイ */
+.screen-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 250vw;  /* 画面を覆い尽くすサイズ */
+    height: 250vw;
+    background-color: #000000; 
+    z-index: 10000; /* ヘッダーより手前 */
+    pointer-events: none;
+    opacity: 0;
+    border-radius: 50%; /* 正円 */
+    
+    /* 画面中央を基準に配置 */
+    transform: translate(-50%, -50%) scale(0);
+    transform-origin: center center;
+}
+
+/* JSで is-active クラスが付いた時のアニメーション */
+.screen-overlay.is-active {
+    pointer-events: auto;
+    /* 0.8秒で広がる指定 */
+    animation: expandSingleColorCircle 0.8s ease-in forwards;
+}
+
+/* 0.8秒で中央から画面外へ拡大するキーフレーム */
+@keyframes expandSingleColorCircle {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
