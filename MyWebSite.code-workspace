@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "images"
+		},
+		{
+			"path": "../../Downloads/01_WebDesign_first[導入教科書(intro#01~03)]-20260414T104548Z-3-001/images-20260421T101621Z-3-001"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MyWebSite"
+	}
+}
